@@ -2,6 +2,12 @@ general:
   branches:
     only:
       - master
+deployment:
+  production:
+    branch: master
+    commands:
+      - git push git@heroku.com:agile-dusk-1843.git $CIRCLE_SHA1:master
+      - heroku run rake db:migrate --app agile-dusk-1843
 checkout:
   post:
     - mkdir -p tmp/cache
