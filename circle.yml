@@ -1,5 +1,5 @@
 deployment:
-  staging:
+  production:
     branch: master
     commands:
       - git push git@heroku.com:agile-dusk-1843.git $CIRCLE_SHA1:master
