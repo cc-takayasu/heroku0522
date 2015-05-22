@@ -8,3 +8,4 @@ deployment:
     commands:
       - git push git@heroku.com:vast-headland-3232.git $CIRCLE_SHA1:master
       - heroku run rake db:migrate --app vast-headland-3232
+
