@@ -7,3 +7,8 @@ deployment:
     branch: master
     commands:
       - ./deploy-to-heroku-master
+deployment:
+  staging:
+    branch: develop
+    commands:
+      - ./deploy-to-heroku-develop
