@@ -11,5 +11,5 @@ deployment:
 deployment:
   staging:
     branch: develop
-    heroku:
-      appname: fathomless-island-4893-staging
+    commands:
+      - ./deploy-to-heroku-develop
