@@ -1,3 +1,3 @@
 #! /bin/sh
 
-git push git@heroku.com:fathomless-island-4893-staging.git $CIRCLE_SHA1:develop && heroku run rake db:migrate --app fathomless-island-4893-staging
+git push git@heroku.com:fathomless-island-4893-staging.git $CIRCLE_SHA1:master && heroku run rake db:migrate --app fathomless-island-4893-staging
